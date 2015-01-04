@@ -46,29 +46,29 @@ angular.module('starter.services', [])
   // Some fake testing data
   var items = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    name: '手機類',
+    lastText: '智慧型手機',
+    face: 'http://imgapi.nownews.com/?w=800&q=80&src=http%3A%2F%2Fs.nownews.com%2F15%2F8f%2F158f9f82e223f3539ac4cc077dabeb32.jpg'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+    name: '電腦類',
+    lastText: '桌上型電腦',
+    face: 'http://www4.pcmag.com/media/images/336347-apple-imac-27-inch-late-2013.jpg'
   }, {
     id: 2,
-    name: 'Andrew Jostlin',
-    lastText: 'Did you get the ice cream?',
-    face: 'https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg'
+    name: '手機2類',
+    lastText: '智障型手機',
+    face: 'http://www.theonlinemarketer.co/wp-content/uploads/2013/08/Nokia-3310-5.jpg'
   }, {
     id: 3,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+    name: '內衣類',
+    lastText: '雙峰話題',
+    face: 'http://images.payeasy.com.tw/products/3424/1964/1964826.jpg'
   }, {
     id: 4,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'https://pbs.twimg.com/profile_images/491995398135767040/ie2Z_V6e.jpeg'
+    name: '汽車類',
+    lastText: '進口汽車',
+    face: 'http://www.audifinance.com.au//App_Themes/AUDI/images/car_S5.png'
   }];
 
   return {
