@@ -41,9 +41,21 @@ angular.module('starter.controllers', [])
 
 // ProductsCtrl
 .controller('ProductsCtrl', function($scope, Products) {
-        $scope.products = Products.all();
+    $scope.products = Products.all();
 
-    })
-    .controller('ProductsDetailCtrl', function($scope, $stateParams, Products) {
-        $scope.product = Products.get($stateParams.productId);
-    });
+})
+
+.controller('ProductsDetailCtrl', function($scope, $stateParams, Products) {
+    $scope.product = Products.get($stateParams.productId);
+})
+
+
+.controller('RefundCtrl', function($scope) {
+    
+})
+
+.controller('OtherCtrl', function($scope) {
+    
+})
+
+;

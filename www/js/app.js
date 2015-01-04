@@ -124,7 +124,30 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                 controller: 'ProductsCtrl'
             }
         }
-    });
+    })
+
+    .state('tab.refund', {
+        url: '/refund',
+        views: {
+            'tab-refund': {
+                templateUrl: 'templates/tab-refund.html',
+                controller: 'RefundCtrl'
+            }
+        }
+    })
+
+    .state('tab.other', {
+        url: '/other',
+        views: {
+            'tab-other': {
+                templateUrl: 'templates/tab-other.html',
+                controller: 'OtherCtrl'
+            }
+        }
+    })
+
+
+    ;
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/tab/dash');
