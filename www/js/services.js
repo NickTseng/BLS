@@ -6,28 +6,28 @@ angular.module('starter.services', [])
   // Some fake testing data
   var items = [{
     id: 0,
-    name: '智慧型手機',
-    lastText: 'iPhone 6',
+    name: '手機類',
+    lastText: '智慧型手機',
     face: 'http://imgapi.nownews.com/?w=800&q=80&src=http%3A%2F%2Fs.nownews.com%2F15%2F8f%2F158f9f82e223f3539ac4cc077dabeb32.jpg'
   }, {
     id: 1,
-    name: '桌上型電腦',
-    lastText: 'iMac',
+    name: '電腦類',
+    lastText: '桌上型電腦',
     face: 'http://www4.pcmag.com/media/images/336347-apple-imac-27-inch-late-2013.jpg'
   }, {
     id: 2,
-    name: '智障型手機',
-    lastText: 'Nokia 3310',
+    name: '手機2類',
+    lastText: '智障型手機',
     face: 'http://www.theonlinemarketer.co/wp-content/uploads/2013/08/Nokia-3310-5.jpg'
   }, {
     id: 3,
-    name: '內衣',
+    name: '內衣類',
     lastText: '雙峰話題',
     face: 'http://images.payeasy.com.tw/products/3424/1964/1964826.jpg'
   }, {
     id: 4,
-    name: '汽車',
-    lastText: 'Audi S5',
+    name: '汽車類',
+    lastText: '進口汽車',
     face: 'http://www.audifinance.com.au//App_Themes/AUDI/images/car_S5.png'
   }];
 
