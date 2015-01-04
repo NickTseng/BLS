@@ -25,13 +25,7 @@ angular.module('starter.controllers', [])
     $scope.item = Items.get($stateParams.itemId);
 })
 
-.controller('FriendsCtrl', function($scope, Friends) {
-    $scope.friends = Friends.all();
-})
 
-.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-    $scope.friend = Friends.get($stateParams.friendId);
-})
 
 .controller('AccountCtrl', function($scope) {
     $scope.settings = {
@@ -39,15 +33,6 @@ angular.module('starter.controllers', [])
     };
 })
 
-// ProductsCtrl
-.controller('ProductsCtrl', function($scope, Products) {
-    $scope.products = Products.all();
-
-})
-
-.controller('ProductsDetailCtrl', function($scope, $stateParams, Products) {
-    $scope.product = Products.get($stateParams.productId);
-})
 
 
 .controller('RefundCtrl', function($scope) {
