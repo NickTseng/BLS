@@ -11,6 +11,18 @@ angular.module('starter.controllers', [])
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
     $scope.chat = Chats.get($stateParams.chatId);
+
+})
+
+.controller('ItemsCtrl', function($scope, Items) {
+    $scope.items = Items.all();
+    $scope.remove = function(item) {
+        Items.remove(item);
+    }
+})
+
+.controller('ItemDetailCtrl', function($scope, $stateParams, Items) {
+    $scope.item = Items.get($stateParams.itemId);
 })
 
 .controller('FriendsCtrl', function($scope, Friends) {
@@ -29,9 +41,9 @@ angular.module('starter.controllers', [])
 
 // ProductsCtrl
 .controller('ProductsCtrl', function($scope, Products) {
-    $scope.products = Products.all();
+        $scope.products = Products.all();
 
-})
-.controller('ProductsDetailCtrl', function($scope, $stateParams, Products) {
-    $scope.product = Products.get($stateParams.productId);
-});
+    })
+    .controller('ProductsDetailCtrl', function($scope, $stateParams, Products) {
+        $scope.product = Products.get($stateParams.productId);
+    });
