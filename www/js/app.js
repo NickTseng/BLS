@@ -50,23 +50,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     })
 
     .state('tab.items', {
-            url: '/items',
-            views: {
-                'tab-items': {
-                    templateUrl: 'templates/tab-items.html',
-                    controller: 'ItemsCtrl'
-                }
+        url: '/items',
+        views: {
+            'tab-items': {
+                templateUrl: 'templates/tab-items.html',
+                controller: 'ItemsCtrl'
             }
-        })
-        .state('tab.item-detail', {
-            url: '/items/:itemId',
-            views: {
-                'tab-items': {
-                    templateUrl: 'templates/item-detail.html',
-                    controller: 'ItemDetailCtrl'
-                }
-            }
-        })
+        }
+    })
+
 
 
     .state('tab.account', {
@@ -99,24 +91,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
     })
 
-
-    .state('tab.products', {
-        url: '/products',
+    .state('tab.item-detail', {
+        url: '/items/:itemId',
         views: {
-            'tab-products': {
-                templateUrl: 'templates/tab-products.html',
-                controller: 'ProductsCtrl'
+            'tab-groups': {
+                templateUrl: 'templates/item-detail.html',
+                controller: 'ItemDetailCtrl'
             }
         }
     })
 
 
-    .state('tab.refund', {
-        url: '/refund',
+
+
+
+    .state('tab.cart', {
+        url: '/cart',
         views: {
-            'tab-refund': {
-                templateUrl: 'templates/tab-refund.html',
-                controller: 'RefundCtrl'
+            'tab-cart': {
+                templateUrl: 'templates/tab-cart.html',
+                controller: 'CartCtrl'
             }
         }
     })

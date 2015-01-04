@@ -14,11 +14,8 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ItemsCtrl', function($scope, Items) {
-    $scope.items = Items.all();
-    $scope.remove = function(item) {
-        Items.remove(item);
-    }
+.controller('ItemsCtrl', function($scope, Groups) {
+   
 })
 
 // GroupsCtrl
@@ -27,13 +24,13 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('GroupsDetailCtrl', function($scope, $stateParams, Groups) {
-  $scope.item = Groups.get($stateParams.groupId);
+.controller('GroupsDetailCtrl', function($scope, $stateParams, SubGroups) {
+  $scope.item = SubGroups.get($stateParams.groupId);
 
 })
 
-.controller('ItemDetailCtrl', function($scope, $stateParams, Items) {
-    $scope.item = Items.get($stateParams.itemId);
+.controller('ItemDetailCtrl', function($scope, $stateParams, Groups) {
+    $scope.item = Groups.get($stateParams.itemId);
 })
 
 
@@ -46,7 +43,7 @@ angular.module('starter.controllers', [])
 
 
 
-.controller('RefundCtrl', function($scope) {
+.controller('CartCtrl', function($scope) {
     
 })
 
