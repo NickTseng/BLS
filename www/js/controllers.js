@@ -21,6 +21,17 @@ angular.module('starter.controllers', [])
     }
 })
 
+// GroupsCtrl
+.controller('GroupsCtrl', function($scope, Groups) {
+    $scope.items = Groups.all();
+
+})
+
+.controller('GroupsDetailCtrl', function($scope, $stateParams, Groups) {
+  $scope.item = Groups.get($stateParams.groupId);
+
+})
+
 .controller('ItemDetailCtrl', function($scope, $stateParams, Items) {
     $scope.item = Items.get($stateParams.itemId);
 })

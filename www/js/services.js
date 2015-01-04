@@ -1,5 +1,45 @@
 angular.module('starter.services', [])
 
+.factory('Groups', function() {
+  // Might use a resource here that returns a JSON array
+
+  // Some fake testing data
+  var groups = [{
+    id: 0,
+    name: '手機',
+    lastText: 'You on your way?',
+    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+  }, {
+    id: 1,
+    name: '機車',
+    lastText: 'Hey, it\'s me',
+    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+  }, {
+    id: 2,
+    name: '平板',
+    lastText: 'Did you get the ice cream?',
+    face: 'https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg'
+  }];
+
+  return {
+    all: function() {
+      return groups;
+    },
+    remove: function(item) {
+      chats.splice(chats.indexOf(chat), 1);
+    },
+    get: function(itemId) {
+      for (var i = 0; i < groups.length; i++) {
+        if (groups[i].id === parseInt(itemId)) {
+          return groups[i];
+        }
+      }
+      return null;
+    }
+  }
+})
+
+
 .factory('Items', function() {
   // Might use a resource here that returns a JSON array
 
