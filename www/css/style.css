@@ -1,1 +1,56 @@
 /* Empty. Add your own CSS if you like */
+
+/* General Setup */
+.padding0 {
+  padding: 0px;
+}
+
+.margin-left3 {
+  margin-left: 3px;
+}
+
+.margin-left-neg-3 {
+  margin-left: -3px;
+}
+
+.margin-right0 {
+  margin-right: 3px;
+}
+
+.margin-right-neg3 {
+  margin-right: -3px;
+}
+
+.margin-bottom-neg35 {
+  margin-bottom: -35px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Cart */
+.cart-note {
+  text-align: center;
+  border-top: #333 solid 1px;
+  border-bottom: #333 solid 1px;
+  border-left: #333 solid 1px;
+}
+
+.cart-note-right {
+  text-align: center;
+  border-top: #333 solid 1px;
+  border-bottom: #333 solid 1px;
+  border-left: #333 solid 1px;
+  border-right: #333 solid 1px;
+}
+
+.cart-sum {
+  font-weight: 900;
+}
+
+/* Single Item */
+.price {
+  font-size: 24px;
+}

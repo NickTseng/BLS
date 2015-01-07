@@ -8,7 +8,7 @@ angular.module('starter.services', [])
         id: 0,
         name: '手機類',
         lastText: '智慧型手機',
-        face: 'http://imgapi.nownews.com/?w=800&q=80&src=http%3A%2F%2Fs.nownews.com%2F15%2F8f%2F158f9f82e223f3539ac4cc077dabeb32.jpg'
+        face: 'http://placehold.it/128'
     }, {
         id: 1,
         name: '電腦類',
