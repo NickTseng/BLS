@@ -54,3 +54,67 @@ a {
 .price {
   font-size: 24px;
 }
+
+/* Order */
+.borderTop0 {
+  border-top: 0;
+}
+
+.borderBottom2 {
+  border-bottom: #111 solid 2px;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.subborder1 {
+  border-right: #111 solid 2px;
+  padding: 11px;
+}
+
+.listBorder {
+  padding: 8px;
+  border: #ddd solid 1px;
+  border-top: 0;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.itemId {
+  width: 37.33333%;
+}
+
+.itemDate {
+  width: 38%;
+}
+
+.top44 {
+  top: 44px;
+}
+
+.orders {
+  border: #444 solid 1px;
+  padding: 8px;
+}
+
+.orderDetail {
+  text-align: center;
+  padding: 15px;
+}
+
+.orderDetail > td {
+  padding: 8px;
+}
+
+.noLeft {
+  border-left: 0;
+}
+
+.noRight {
+  border-right: 0;
+}
+
+.padding8 {
+  padding: 8px;
+}

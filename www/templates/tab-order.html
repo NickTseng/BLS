@@ -1,18 +1,34 @@
 <ion-view view-title="訂單查詢">
+  <div class="bar bar-subheader borderTop0 borderBottom2 padding0">
+    <table class="width100">
+      <thead>
+        <tr>
+          <th class="subborder1 noLeft">訂單編號</th>
+          <th class="subborder1">訂貨日期</th>
+          <th class="subborder1 noRight">狀態</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
   <ion-content>
-     <div class="list card">
-      <div class="item item-divider">訂單查詢1</div>
-         <ion-list>
-           <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="item in items"  href="#/tab/order/{{item.id}}">
-          <h2>{{item.order_id}}</h2>
-          <p>{{item.order_date}}</p>
-          <p>{{item.status}}</p>
-        </ion-item>
-         </ion-list>  
-      </div>
+    <div class="list top44">
+      <a class="item padding0" ng-repeat="item in items" href="#/tab/order/{{item.id}}">
+        <table class="width100">
+          <tbody>
+            <tr>
+              <td class="listBorder itemId noLeft">{{item.order_id}}</td>
+              <td class="listBorder itemDate">{{item.order_date}}</td>
+              <td class="listBorder noRight">{{item.status}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </a>
     </div>
-    <ion-list>
-     
-    </ion-list>
+
+
+
+
+
+
   </ion-content>
 </ion-view>
