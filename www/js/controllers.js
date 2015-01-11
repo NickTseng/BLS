@@ -35,12 +35,28 @@ angular.module('starter.controllers', [])
 
 
 
-.controller('AccountCtrl', function($scope) {
+.controller('OrderCtrl', function($scope) {
     $scope.settings = {
         enableFriends: true
     };
+
+    $scope.items = [{
+        id: 0,
+        order_id: 'A00000001',
+        order_date: '2014/12/1',
+        status: '己完成'
+    },{
+        id: 1,
+        order_id: 'A00000002',
+        order_date: '2014/12/15',
+        status: '己出貨'
+    }];
+
 })
 
+.controller('OrderDetailCtrl', function($scope, $stateParams) {
+
+})
 
 
 .controller('CartCtrl', function($scope) {

@@ -1,0 +1,18 @@
+<ion-view view-title="訂單查詢">
+  <ion-content>
+     <div class="list card">
+      <div class="item item-divider">訂單查詢1</div>
+         <ion-list>
+           <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="item in items"  href="#/tab/order/{{item.id}}">
+          <h2>{{item.order_id}}</h2>
+          <p>{{item.order_date}}</p>
+          <p>{{item.status}}</p>
+        </ion-item>
+         </ion-list>  
+      </div>
+    </div>
+    <ion-list>
+     
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -61,12 +61,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 
 
-    .state('tab.account', {
-        url: '/account',
+    .state('tab.order', {
+        url: '/order',
         views: {
-            'tab-account': {
-                templateUrl: 'templates/tab-account.html',
-                controller: 'AccountCtrl'
+            'tab-order': {
+                templateUrl: 'templates/tab-order.html',
+                controller: 'OrderCtrl'
+            }
+        }
+    })
+
+    .state('tab.order-detail', {
+        url: '/order/:orderId',
+        views: {
+            'tab-order': {
+                templateUrl: 'templates/order-detail.html',
+                controller: 'OrderDetailCtrl'
             }
         }
     })
